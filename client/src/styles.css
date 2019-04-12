@@ -1,0 +1,137 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.chat {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-x: hidden;
+    flex-flow: column;
+}
+
+.send {
+    padding: 10pt;
+}
+
+.messages {
+    padding: 10pt;
+    flex: 1;
+    background-color: rgb(247, 248, 244);
+    border-bottom: 2px solid rgb(206, 207, 204);
+}
+
+.sidebar {
+    height: 100vh;
+    max-height: 100vh;
+    display: inline-flex;
+    width: 220px;
+    max-width: 220px;
+    overflow-x: hidden;
+    background-color: rgb(24, 97, 146);
+}
+
+.sidebar:first-of-type {
+    border-right: 3px solid rgb(15, 78, 121);
+}
+
+.sidebar:last-of-type {
+    background-color: rgb(36, 148, 73);
+    border-left: 3px solid rgb(28, 112, 56);
+}
+
+.title {
+    background: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 8pt);
+    padding: 8pt 4pt;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.item {
+    background: rgba(0, 0, 0, 0.2);
+    width: calc(100% - 8pt);
+    padding: 8pt 4pt;
+    color: white;
+    font-size: 10pt;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin-top: -1px;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.active {
+    background: rgba(0, 126, 255, 0.5)
+}
+
+.input {
+    flex-grow: 1;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.message {
+    position: relative;
+    width: fit-content;
+    padding: 8pt;
+    background-color: rgb(228, 157, 116);
+    border-radius: 4px;
+    margin-bottom: 8pt;
+    clear: both;
+    max-width: 75%;
+    word-break: break-all;
+}
+
+.message-me {
+    position: relative;
+    width: fit-content;
+    float: right;
+    padding: 8pt;
+    color: #eee;
+    background-color: rgb(54, 71, 98);
+    border-radius: 4px;
+    margin-bottom: 8pt;
+    right: 8pt;
+    max-width: 75%;
+    word-break: break-all;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.message-system {
+    position: relative;
+    padding: 4pt 0;
+    font-size: 10pt;
+    color: #333;
+    margin-bottom: 8pt;
+    text-align: center;
+}
