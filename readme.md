@@ -1,8 +1,12 @@
-### Assignment 1 ###
+### Assignment 2 ###
 Jesse Wheeler - 101075970
 
 To run (from root directory)
 
-npm install && cd client && npm install && npm run build && cd .. && nodemon server
+cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build && cd ../admin && npm install && npm install --only=dev --no-shrinkwrap && npm run build && cd .. && npm install && nodemon server
 
-Or visit: chat-101075970.herokuapp.com"# ReactSocketIoChatv2" 
+Or visit: [chat-101075970v2.herokuapp.com]
+
+For Admin: [https://chat-101075970v2.herokuapp.com/admin]
+
+Login: admin // p@ssw0rd!
